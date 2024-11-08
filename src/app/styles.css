@@ -1,0 +1,28 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.clip-path-half {
+  width: 300px;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  animation: spin 1s linear infinite;
+}
+
+/* Optional styling for the line connecting questions */
+.flex.relative {
+  position: relative;
+}
+
+.w-px {
+  width: 1px;
+  background-color: #ccc; /* You can change the color of the line here */
+}
+
+.h-12 {
+  height: 30px; /* Adjust height based on the spacing you want between the items */
+}
